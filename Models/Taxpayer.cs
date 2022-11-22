@@ -1,6 +1,6 @@
 namespace RochaBank.Models
 {
-    public class Taxpayer
+    public class Taxpayer : IClient
     {
         public int Id { get; set; }
         public string Name { get; set; }
