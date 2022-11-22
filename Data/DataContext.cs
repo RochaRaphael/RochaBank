@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using RochaBank.Data.Mapping;
+using RochaBank.Data.Models;
 using RochaBank.Models;
 
 namespace RochaBank.DataContext
@@ -14,7 +16,9 @@ namespace RochaBank.DataContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.ApplyConfiguration(new ClientTypeMap());
+            modelBuilder.ApplyConfiguration(new CompanyMap());
+            modelBuilder.ApplyConfiguration(new TaxpayerMap());
         }
 
     }
