@@ -8,6 +8,22 @@ namespace RochaBank.Data.Mapping
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ClientType> builder)
         {
             builder.ToTable("ClientType");
+
+            //Primary key
+            builder.HasKey(x => x.Type);
+
+            builder.Property(x => x.Type)
+                .IsRequired()
+                .HasColumnName("Type")
+                .HasColumnType("NVARCHAR")
+                .HasMaxLength(80);
+
+            builder.Property(x => x.BankFee)
+                .IsRequired()
+                .HasColumnName("Type")
+                .HasColumnType("DECIMAL");
+
+
         }
     }
 }
