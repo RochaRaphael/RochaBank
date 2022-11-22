@@ -8,7 +8,7 @@ namespace RochaBank.Models
         public string CNPJ { get; set; }
         public double BankBalance { get; set; }
 
-        public ClientType Type { get; set; }
+        public ClientType ClientTypes { get; set; }
 
     }
 }

@@ -8,6 +8,6 @@ namespace RochaBank.Models
         public string CPF { get; set; }
         public double BankBalance { get; set; }
 
-        public ClientType Type { get; set; }
+        public ClientType ClientTypes { get; set; }
     }
 }
