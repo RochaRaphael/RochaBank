@@ -22,8 +22,6 @@ namespace RochaBank.Data.Mapping
                 .IsRequired()
                 .HasColumnName("Type")
                 .HasColumnType("DECIMAL");
-
-
         }
     }
 }
