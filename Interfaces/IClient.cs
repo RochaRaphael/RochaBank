@@ -1,4 +1,4 @@
-namespace RochaBank.Models
+namespace RochaBank.Interfaces
 {
     public interface IClient
     {
@@ -7,7 +7,7 @@ namespace RochaBank.Models
         public string Cellphone { get; set; }
         public double BankBalance { get; set; }
 
-        public string TypeId { get; set; }
+        public IClientType Type { get; set; }
 
     }
 }

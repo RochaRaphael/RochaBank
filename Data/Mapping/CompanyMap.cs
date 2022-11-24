@@ -38,9 +38,12 @@ namespace RochaBank.Data.Mapping
                 .HasColumnName("Bank Balance")
                 .HasColumnType("DECIMAL");
 
-            builder.HasOne(x => x.Type)
-                .WithMany()
-                .HasForeignKey(x => x.TypeId);
+            builder.Property(x => x.TypeId)
+                .IsRequired()
+                .HasColumnName("CPF")
+                .HasColumnType("NVARCHAR");
+
+
         }
     }
 }

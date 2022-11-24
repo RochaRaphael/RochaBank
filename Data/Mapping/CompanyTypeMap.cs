@@ -3,11 +3,11 @@ using RochaBank.Models;
 
 namespace RochaBank.Data.Mapping
 {
-    public class ClientTypeMap : IEntityTypeConfiguration<ClientType>
+    public class CompanyTypeMap : IEntityTypeConfiguration<ClientType>
     {
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ClientType> builder)
         {
-            builder.ToTable("ClientType");
+            builder.ToTable("CompanyType");
 
             //Primary key
             builder.HasKey(x => x.Type);
@@ -20,7 +20,7 @@ namespace RochaBank.Data.Mapping
 
             builder.Property(x => x.BankFee)
                 .IsRequired()
-                .HasColumnName("Type")
+                .HasColumnName("BankFee")
                 .HasColumnType("DECIMAL");
         }
     }

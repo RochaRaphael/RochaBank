@@ -38,9 +38,6 @@ namespace RochaBank.Data.Models
                 .HasColumnName("Bank Balance")
                 .HasColumnType("DECIMAL");
 
-            builder.HasOne(x => x.Type)
-            .WithMany()
-            .HasForeignKey(x => x.TypeId);
 
 
         }
