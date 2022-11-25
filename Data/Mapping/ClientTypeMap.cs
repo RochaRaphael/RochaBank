@@ -3,7 +3,7 @@ using RochaBank.Models;
 
 namespace RochaBank.Data.Mapping
 {
-    public class CompanyTypeMap : IEntityTypeConfiguration<ClientType>
+    public class ClientTypeMap : IEntityTypeConfiguration<ClientType>
     {
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ClientType> builder)
         {
