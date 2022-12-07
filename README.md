@@ -8,9 +8,9 @@ pode sacar, depositar e ver o saldo da conta.
 --------------------------------------
 ## Arquitetura do projeto
 
-O arquivo DataAccess é onde tem todos os acessos ao banco de dados. Apenas nessa classe terá os métodos que editará diretamente o banco.
-Na pasta Models, teremos as classes que simulam as tabelas do banco de dados.
-Na pasta Data, fazemos a conexão e mapeamento com o banco de dados.
+O arquivo `DataAccess` é onde tem todos os acessos ao banco de dados. Apenas nessa classe terá os métodos que editará diretamente o banco.
+Na pasta `Models`, teremos as classes que simulam as tabelas do banco de dados.
+Na pasta `Data`, fazemos a conexão e mapeamento com o banco de dados.
 
 --------------------------------------
 
